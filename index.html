@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yummy</title>
+
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+</head>
+
+<body>
+
+
+    <div class="side-menu d-flex min-vh-100 position-fixed top-0 ">
+        <div class="collapse min-vh-100 " id="navbarToggleExternalContent">
+            <div class="bg-dark p-4 d-flex flex-column justify-content-between min-vh-100 p-3">
+                <ul class="list-unstyled m-0">
+                    <li id="search" class="py-2"><a href="#" class="text-white  text-decoration-none">Search</a></li>
+                    <li id="categoriesBtn" class="py-2"><a href="#"
+                            class="text-white  text-decoration-none">Categories</a>
+                    </li>
+                    <li id="area" class="py-2"><a href="#" class="text-white  text-decoration-none">Area</a>
+                    </li>
+                    <li id="ingredientsBtn" class="py-2"><a href="#"
+                            class="text-white  text-decoration-none">Ingredients</a></li>
+                    <li id="contact" class="py-2"><a href="#" class="text-white  text-decoration-none">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="nav-end text-white ">
+                    <div class="icons">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <div class="copyright">
+                        <p>"Copyright Â© 2019 All Rights<br>
+                            Reserved."</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <nav class="navbar navbar-white bg-white">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation ">
+                    <span class="navbar-toggler-icon  "></span>
+                </button>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div id="mealsContainer" class="row">
+            <div class="col-md-3">
+                <div class="meal">
+                    <img src="" class="w-100 rounded-3">
+                    <div class="meal-layer d-flex justify-content-center align-items-center">
+                        <h3>..</h3>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-------------------- Search Section --------------------------->
+    <section>
+        <div class="search-section container w-75 py-4 d-none">
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <input id="searchByName" type="text" class="form-control" placeholder="Search by name">
+                </div>
+                <div class="col-md-6">
+                    <input id="searchByLetter" type="text" maxlength="1" class="form-control"
+                        placeholder="Search by first letter">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!------------------------------page---------------------------------->
+    <div class="main-page">
+        <div class="container">
+            <div class="row " id="mealsContainer">
+
+
+            </div>
+        </div>
+
+    </div>
+    <!----------------categories---------------------->
+    <div class="container my-4">
+        <h2 class="mb-4">Categories</h2>
+        <div class="row" id="categoriesContainer"></div>
+
+        <h2 class="mt-5 mb-4" id="mealsTitle"></h2>
+        <div class="row" id="mealsContainer"></div>
+    </div>
+    <!--------------------------area--------------------------------->
+    <div class="container my-4">
+        <h2 id="areaTitle" class="text-center text-white d-none"></h2>
+        <div class="row g-4" id="areaContainer"></div>
+    </div>
+
+    <!------------------------------ingredients---------------------------------->
+
+    <div class="ingredients-section">
+        <div class="container">
+            <h2 class="mb-4 text-white">Ingredients</h2>
+            <div class="row" id="ingredientContainer"></div>
+        </div>
+    </div>
+
+
+
+
+    <!---------------contact us------------------------>
+    <div class="contact-section d-none">
+        <div class="container py-5">
+            <h2 class="text-center text-white mb-4">Contact Us</h2>
+
+            <div class="row g-3 w-75 m-auto">
+                <div class="col-md-6">
+                    <input id="nameInput" type="text" class="form-control" placeholder="Enter Your Name">
+                    <p id="nameAlert" class="alert alert-danger mt-2 d-none">Name must contain letters only</p>
+                </div>
+
+                <div class="col-md-6">
+                    <input id="emailInput" type="email" class="form-control" placeholder="Enter Your Email">
+                    <p id="emailAlert" class="alert alert-danger mt-2 d-none">Invalid Email</p>
+                </div>
+
+                <div class="col-md-6">
+                    <input id="phoneInput" type="text" class="form-control" placeholder="Enter Your Phone">
+                    <p id="phoneAlert" class="alert alert-danger mt-2 d-none">Invalid Phone Number</p>
+                </div>
+
+                <div class="col-md-6">
+                    <input id="ageInput" type="number" class="form-control" placeholder="Enter Your Age">
+                    <p id="ageAlert" class="alert alert-danger mt-2 d-none">Age must be 12–90</p>
+                </div>
+
+                <div class="col-md-6">
+                    <input id="passInput" type="password" class="form-control" placeholder="Enter Password">
+                    <p id="passAlert" class="alert alert-danger mt-2 d-none">
+                        Password must contain:
+                        <br>• At least 8 chars
+                        <br>• Uppercase & lowercase letters
+                        <br>• Number
+                    </p>
+                </div>
+
+                <div class="col-md-6">
+                    <input id="repassInput" type="password" class="form-control" placeholder="Re-enter Password">
+                    <p id="repassAlert" class="alert alert-danger mt-2 d-none">Passwords do NOT match</p>
+                </div>
+
+                <div class="col-12 text-center">
+                    <button id="submitBtn" class="btn btn-danger px-4 mt-3" disabled>Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./index.js/index.js"></script>
+    <script src="./index.js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
